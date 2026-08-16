@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NS Jewellers - Security Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0eded",
+                    "surface-dim": "#dcd9d9",
+                    "primary": "#735c00",
+                    "tertiary-fixed-dim": "#cac99f",
+                    "surface-variant": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-surface-variant": "#4d4635",
+                    "background": "#fcf9f8",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1c1b1b",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#e6e5b9",
+                    "on-tertiary-fixed": "#1d1d03",
+                    "on-primary-fixed": "#241a00",
+                    "on-tertiary-container": "#474727",
+                    "surface-container-high": "#eae7e7",
+                    "on-primary-container": "#554300",
+                    "tertiary-container": "#b6b58c",
+                    "surface": "#fcf9f8",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-background": "#1c1b1b",
+                    "inverse-surface": "#313030",
+                    "on-primary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#c6c6c6",
+                    "on-secondary-container": "#646464",
+                    "outline": "#7f7663",
+                    "secondary-container": "#e2e2e2",
+                    "outline-variant": "#d0c5af",
+                    "inverse-on-surface": "#f3f0ef",
+                    "primary-container": "#d4af37",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "inverse-primary": "#e9c349",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#484828",
+                    "secondary": "#5e5e5e",
+                    "surface-tint": "#735c00",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#ffe088",
+                    "surface-container-highest": "#e5e2e1",
+                    "tertiary": "#60603e",
+                    "surface-bright": "#fcf9f8",
+                    "secondary-fixed": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "quote": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "Manrope"
+                    ],
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg": [
+                            "Playfair Display"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "label-caps": [
+                            "Manrope"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ]
+            },
+            "fontSize": {
+                    "quote": [
+                            "20px",
+                            {
+                                    "lineHeight": "30px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.15em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom Toggle Switch Styles */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #d4af37; /* Gold */
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #d4af37; /* Gold */
+        }
+        
+        .toggle-checkbox {
+            right: 0;
+            z-index: 1;
+            border-color: #7f7663; /* Outline */
+            transition: all 0.3s;
+        }
+        
+        .toggle-label {
+            background-color: #e5e2e1; /* Surface Variant */
+            transition: all 0.3s;
+        }
+
+        /* Ghost Border for Interactive Elements */
+        .ghost-border {
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .ghost-border:hover, .ghost-border:focus-within {
+            border-color: #d4af37;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopAppBar Container -->
+<header class="w-full top-0 sticky flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-background dark:bg-background z-50 flat no shadows border-b border-outline-variant dark:border-outline">
+<button aria-label="Go back" class="text-on-surface-variant hover:opacity-80 transition-opacity cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="arrow_back" data-weight="regular">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md tracking-widest text-primary dark:text-primary-fixed-dim uppercase text-center absolute left-1/2 -translate-x-1/2">
+            Security Settings
+        </h1>
+<div class="w-6"></div> <!-- Spacer to keep title centered -->
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 space-y-section-gap">
+<!-- Header Section -->
+<section class="text-center space-y-4">
+<div class="w-16 h-16 mx-auto border border-primary-container rounded-full flex items-center justify-center bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="shield_lock" data-weight="regular">shield_lock</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Account Protection</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto">
+                Secure your heritage pieces and ledger details. Apne khate ki suraksha sunishchit karein.
+            </p>
+<div class="flex items-center justify-center mt-6">
+<div class="h-px w-12 bg-primary-container"></div>
+<div class="w-1.5 h-1.5 transform rotate-45 bg-primary-container mx-2"></div>
+<div class="h-px w-12 bg-primary-container"></div>
+</div>
+</section>
+<!-- Settings List -->
+<section class="space-y-6">
+<!-- App Lock Toggle -->
+<div class="bg-surface-container-lowest p-6 rounded-DEFAULT ghost-border flex items-start justify-between group">
+<div class="flex-1 pr-6">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="lock" data-weight="regular">lock</span>
+                        App Lock
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">
+                        Require PIN or Biometrics to open the app. App kholne ke liye PIN zaroori hai.
+                    </p>
+</div>
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in mt-1">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="app_lock" name="app_lock" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="app_lock"></label>
+</div>
+</div>
+<!-- Change PIN -->
+<button class="w-full bg-surface-container-lowest p-6 rounded-DEFAULT ghost-border flex items-center justify-between text-left group">
+<div class="flex-1 pr-6">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="pin" data-weight="regular">pin</span>
+                        Change 4-Digit PIN
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">
+                        Update your secure access code. Naya suraksha code set karein.
+                    </p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" data-icon="chevron_right" data-weight="regular">chevron_right</span>
+</button>
+<!-- Biometrics Toggle -->
+<div class="bg-surface-container-lowest p-6 rounded-DEFAULT ghost-border flex items-start justify-between group">
+<div class="flex-1 pr-6">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="fingerprint" data-weight="regular">fingerprint</span>
+                        Biometric Authentication
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">
+                        Use Fingerprint or Face ID for faster access. Tezi se login ke liye Face ID ya Fingerprint chunein.
+                    </p>
+</div>
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in mt-1">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="biometric_auth" name="biometric_auth" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="biometric_auth"></label>
+</div>
+</div>
+<!-- Auto-lock Timing -->
+<div class="bg-surface-container-lowest p-6 rounded-DEFAULT ghost-border flex items-start justify-between group relative">
+<div class="flex-1 pr-6">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="timer" data-weight="regular">timer</span>
+                        Auto-lock Timing
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">
+                        When should the app lock itself automatically? App kab apne aap lock hona chahiye?
+                    </p>
+</div>
+<div class="relative mt-2">
+<select class="appearance-none bg-transparent border-b border-on-surface text-on-surface font-label-caps text-label-caps uppercase pr-8 py-2 focus:outline-none focus:border-primary-container focus:ring-0 cursor-pointer text-right">
+<option value="immediate">Immediate</option>
+<option selected="" value="1min">After 1 Minute</option>
+<option value="5min">After 5 Minutes</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant" data-icon="arrow_drop_down" data-weight="regular">arrow_drop_down</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Navigation suppression: Settings pages are task-focused, hiding bottom nav -->
+</body></html>
